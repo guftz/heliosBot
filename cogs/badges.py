@@ -19,8 +19,8 @@ class Badges(commands.Cog):
     
     @badge.command(name = "give", description = "Give a badge to a user")
     async def give(self, ctx: discord.ApplicationContext, 
-                      user: Option(discord.Member, "The user to receive the bADGE", required=True), 
-                      badge_id: Option(str, "THe Badge ID", required=True)) -> None:
+                      user: Option(discord.Member, "The user to receive the Badge", required=True), 
+                      badge_id: Option(str, "The Badge ID", required=True)) -> None:
         
         if ctx.author.id != int(os.getenv("OWNER_ID")):
             embederror = (EmbedBuilder(title="An error occurred", description=f"You do not have permission to do that")
@@ -77,8 +77,8 @@ class Badges(commands.Cog):
             
     @badge.command(name = "remove", description = "Remove a Badge from a user")
     async def remove(self, ctx: discord.ApplicationContext, 
-                        user: Option(discord.Member, "Test", required=True), 
-                        badge_id: Option(str, "Test", required=True)) -> None:
+                        user: Option(discord.Member, "The use to remove the Badge", required=True), 
+                        badge_id: Option(str, "The badge ID", required=True)) -> None:
         
         if ctx.author.id != int(os.getenv("OWNER_ID")):
             embederror = (EmbedBuilder(title="An error occurred", description=f"You do not have permission to do that")
