@@ -110,7 +110,7 @@ class Badges(commands.Cog):
                     Database.delete_data(connection, "user_badges", {
                         "user_id": user.id, 
                         "badge_id": badge_id})
-                    (EmbedBuilder("Badge removed", f"Badge removed from {user.name} ({badge_id})")
+                    embed = (EmbedBuilder("Badge removed", f"Badge removed from {user.name} ({badge_id})")
                              .set_color(discord.Color.red())
                              .set_footer()
                              .set_timestamp()

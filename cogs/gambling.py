@@ -35,6 +35,7 @@ class Gambling(commands.Cog):
                         
                         embed = (EmbedBuilder(title="You Won")
                             .set_author(name=f"{ctx.author.name}", icon_url=f"{ctx.author.avatar.url}")
+                            .add_field("Gambled amount", f"{amount}")
                             .add_field("Your points", f"{new_amount}")
                             .set_footer()
                             .set_timestamp()

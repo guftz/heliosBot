@@ -40,8 +40,8 @@ class Profile(commands.Cog):
 
                 embed = (EmbedBuilder(title="My Profile", description=f"{result_bio}")
                          .set_author(name=f"{result_username}", icon_url=f"{ctx.author.avatar.url}")
-                         .add_field(name=":star: Points", value=f"{result_points}", inline=True)
-                         .add_field(name=":eyes: Badges", value=badges, inline=False)
+                         .add_field(name="Points", value=f"{result_points}", inline=True)
+                         .add_field(name="Badges", value=badges, inline=False)
                          .set_thumbnail(url=f"{ctx.author.avatar.url}")
                          .set_footer()
                          .set_timestamp()

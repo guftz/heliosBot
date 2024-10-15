@@ -23,7 +23,7 @@ class Daily(commands.Cog):
                 
                 embed = (EmbedBuilder(title="Good to see you again!", description=f"Here is your daily bonus")
                     .add_field(name="Daily Bonus", value=f"+{points_to_add}", inline=True)
-                    .add_field(name="<:star:1276191913988329553> Points", value=current_points[0]["points"] + points_to_add, inline=True)
+                    .add_field(name="Points", value=current_points[0]["points"] + points_to_add, inline=True)
                     .set_footer()
                     .set_timestamp()
                     .set_color(0xfbbb02)
