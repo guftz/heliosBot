@@ -69,12 +69,6 @@ Create a **.env** file in the root directory with the following content:
 3. **Get Your Token**:
    - After creating the bot, under the **"Bot"** tab, you’ll see a **"Token"** section.
    - Click **"Copy"** to get your bot token. **Keep it safe** and **never share** this token publicly!
-
-4. **Invite the Bot to Your Server**:
-   - In the **"OAuth2"** tab, go to **"URL Generator"**.
-   - Under **"SCOPES"**, select **"bot"**.
-   - Under **"BOT PERMISSIONS"**, choose the necessary permissions.
-   - Copy the generated URL, paste it into your browser, and invite your bot to your server.
   
 ##### How to Get Your Discord ID
 
