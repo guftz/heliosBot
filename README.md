@@ -53,9 +53,36 @@
 
 Create a **.env** file in the root directory with the following content:
    ```env
-   DISCORD_TOKEN=your_discord_bot_token
+   BOT_TOKEN=your_discord_bot_token
    OWNER_ID=your_discord_account_id
    ```
+##### How to Get Your Discord Bot Token
+
+1. **Create a Discord Application**:
+   - Go to the [Discord Developer Portal](https://discord.com/developers/applications).
+   - Click **"New Application"** and give your bot a name.
+
+2. **Create the Bot**:
+   - In your application's settings, navigate to the **"Bot"** tab.
+   - Click **"Add Bot"**, then confirm by clicking **"Yes, do it!"**.
+
+3. **Get Your Token**:
+   - After creating the bot, under the **"Bot"** tab, you’ll see a **"Token"** section.
+   - Click **"Copy"** to get your bot token. **Keep it safe** and **never share** this token publicly!
+
+4. **Invite the Bot to Your Server**:
+   - In the **"OAuth2"** tab, go to **"URL Generator"**.
+   - Under **"SCOPES"**, select **"bot"**.
+   - Under **"BOT PERMISSIONS"**, choose the necessary permissions.
+   - Copy the generated URL, paste it into your browser, and invite your bot to your server.
+  
+##### How to Get Your Discord ID
+
+1. **Enable Developer Mode on Discord**
+   - Go to Discord Settings and find the Advanced Tab
+   - Enable the Developer Mode
+2. **Get your ID**
+   - Right click on any of your messages and copy your ID
 
 #### 4. Run the bot:
 
