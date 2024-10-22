@@ -37,12 +37,17 @@ class Profile(commands.Cog):
                 badge_list = Database.select_data(connection, "user_badges", ["badge_id"], {"user_id": ctx.author.id})
                 badge_ids = [badge['badge_id'] for badge in badge_list]
                 badges = "\n".join(Database.select_data(connection, "badges", ["name"], {"badge_id": item})[0]['name'] for item in badge_ids)
+                
+                if ctx.author.avatar:
+                    author_profile_pic = ctx.author.avatar.url
+                else:
+                    author_profile_pic = "https://dummyimage.com/512x512/000/fff.jpg&text=No+Image"
 
                 embed = (EmbedBuilder(title="My Profile", description=f"{result_bio}")
-                         .set_author(name=f"{result_username}", icon_url=f"{ctx.author.avatar.url}")
+                         .set_author(name=f"{result_username}", icon_url=author_profile_pic)
                          .add_field(name="Points", value=f"{result_points}", inline=True)
                          .add_field(name="Badges", value=badges, inline=False)
-                         .set_thumbnail(url=f"{ctx.author.avatar.url}")
+                         .set_thumbnail(url=author_profile_pic)
                          .set_footer()
                          .set_timestamp()
                          .set_color(color_int)

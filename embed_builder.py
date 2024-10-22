@@ -6,7 +6,7 @@ class EmbedBuilder:
     def __init__(self, title: Optional[str] = None, description: Optional[str] = None, color: discord.Color = discord.Color.default()):
         self.embed = discord.Embed(title=title, description=description, color=color)
 
-    def set_author(self, name: str, icon_url: Optional[str] = None, url: Optional[str] = None) -> 'EmbedBuilder':
+    def set_author(self, name: str, icon_url: Optional[str] = None, url: Optional[str] = None) -> 'EmbedBuilder':      
         self.embed.set_author(name=name, icon_url=icon_url, url=url)
         return self
 
@@ -29,6 +29,7 @@ class EmbedBuilder:
                 "If any bug occurs, try contacting the developer",
                 "Helios Bot"
             ])
+            
         self.embed.set_footer(text=text, icon_url=icon_url)
         return self
 

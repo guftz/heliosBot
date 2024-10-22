@@ -33,8 +33,13 @@ class Gambling(commands.Cog):
                     if odd == 1:
                         new_amount = result[0]["points"] + amount
                         
+                        if ctx.author.avatar:
+                            author_profile_pic = ctx.author.avatar.url
+                        else:
+                            author_profile_pic = "https://dummyimage.com/512x512/000/fff.jpg&text=No+Image"
+                        
                         embed = (EmbedBuilder(title="You Won")
-                            .set_author(name=f"{ctx.author.name}", icon_url=f"{ctx.author.avatar.url}")
+                            .set_author(name=f"{ctx.author.name}", icon_url=author_profile_pic)
                             .add_field("Gambled amount", f"{amount}")
                             .add_field("Your points", f"{new_amount}")
                             .set_footer()
@@ -47,9 +52,15 @@ class Gambling(commands.Cog):
                         await ctx.respond(embed=embed)
                     else:
                         new_amount = result[0]["points"] - amount
+                        
+                        if ctx.author.avatar:
+                            author_profile_pic = ctx.author.avatar.url
+                        else:
+                            author_profile_pic = "https://dummyimage.com/512x512/000/fff.jpg&text=No+Image"
+                        
                         embed = (EmbedBuilder(title="You Lost")
-                            .set_author(name=f"{ctx.author.name}", icon_url=f"{ctx.author.avatar.url}")
-                            .add_field("Your points", f"{new_amount} <:star:1276191913988329553>")
+                            .set_author(name=f"{ctx.author.name}", icon_url=author_profile_pic)
+                            .add_field("Your points", f"{new_amount}")
                             .set_footer()
                             .set_timestamp()
                             .set_color(discord.Color.red())
