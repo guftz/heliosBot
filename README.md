@@ -13,18 +13,19 @@
 
 ## Demo
 
-![image](https://github.com/user-attachments/assets/3cc8e96c-9557-4505-9222-6f52e3bf8501)
+![image](https://github.com/user-attachments/assets/0c05e126-a5a4-4344-ab9e-0572d77ffa80)
 
-![image](https://github.com/user-attachments/assets/3df19f92-5b69-4316-b4b6-c7365beede39)
+![image](https://github.com/user-attachments/assets/95def651-3cde-4485-b7c9-c8e57a3234ce)
 
-![image](https://github.com/user-attachments/assets/abfd2536-70ff-4bb8-9a08-62ab9d4f13b4)
+![image](https://github.com/user-attachments/assets/54a43547-9a3d-47af-956e-ad2a7ebe4109)
 
-![image](https://github.com/user-attachments/assets/c9e10906-bfb9-4d08-bcbc-b78c92e12a0d)
+![image](https://github.com/user-attachments/assets/081142a3-7273-472d-8bc7-f0fb7b0ac220)
 
-![image](https://github.com/user-attachments/assets/aab20b5c-92b9-4937-ba49-d0c57b9a6a23)
+![image](https://github.com/user-attachments/assets/29c34a0c-d49e-4d98-abb5-0a47f8951793)
 
-![image](https://github.com/user-attachments/assets/ce8d2d12-cd94-4e68-a89a-333550ed7b56)
+![image](https://github.com/user-attachments/assets/11eeca53-7979-4c52-8fe6-db5876e21350)
 
+![image](https://github.com/user-attachments/assets/9073d403-bb27-4fea-a0f7-6fb3630b7ee4)
 
 ## Installation
 
@@ -53,9 +54,30 @@
 
 Create a **.env** file in the root directory with the following content:
    ```env
-   DISCORD_TOKEN=your_discord_bot_token
+   BOT_TOKEN=your_discord_bot_token
    OWNER_ID=your_discord_account_id
    ```
+##### How to Get Your Discord Bot Token
+
+1. **Create a Discord Application**:
+   - Go to the [Discord Developer Portal](https://discord.com/developers/applications).
+   - Click **"New Application"** and give your bot a name.
+
+2. **Create the Bot**:
+   - In your application's settings, navigate to the **"Bot"** tab.
+   - Click **"Add Bot"**, then confirm by clicking **"Yes, do it!"**.
+
+3. **Get Your Token**:
+   - After creating the bot, under the **"Bot"** tab, you’ll see a **"Token"** section.
+   - Click **"Copy"** to get your bot token. **Keep it safe** and **never share** this token publicly!
+  
+##### How to Get Your Discord ID
+
+1. **Enable Developer Mode on Discord**
+   - Go to Discord Settings and find the Advanced Tab
+   - Enable the Developer Mode
+2. **Get your ID**
+   - Right click on any of your messages and copy your ID
 
 #### 4. Run the bot:
 
